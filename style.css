@@ -1,5 +1,55 @@
-.gray-box {
-	background-color: gray;
-  width: 250px;
-  height: 250px;
+/* imports */
+
+/* universal styles */
+* {
+    margin: 0;
+    padding: 0;
 }
+
+
+/* header styles */
+.header-elements {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 5em;
+}
+
+header h1 {
+    flex-wrap: nowrap;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-elements {
+    text-align: right;
+    flex-grow: 1;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    display: inline-block;
+    padding-left: 1.5em;
+}
+
+/* project container styles */
+
+.gray-box {
+    background-color: gray;
+    width: 320px;
+    height: 180px;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+/* next work on sizing the text and choosing a font */
