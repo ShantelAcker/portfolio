@@ -1,11 +1,19 @@
 /* imports */
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 
 /* universal styles */
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Patrick Hand', cursive;
+    
 }
 
+body {
+    background: linear-gradient(0deg,rgb(183, 232, 245) 0%, rgba(252,219,219,1) 75%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 
 /* header styles */
 .header-elements {
@@ -13,7 +21,8 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 0 5em;
+    margin: 1em auto auto auto;
+    max-width: 80%;
 }
 
 header h1 {
@@ -37,10 +46,21 @@ nav ul {
 nav li {
     display: inline-block;
     padding-left: 1.5em;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* main styles */
+main {
+    max-width: 80%;
+    margin: auto;
+}
+
+.page-title {
+    margin-top: 2em;
 }
 
 /* project container styles */
-
 .gray-box {
     background-color: gray;
     width: 320px;
@@ -51,5 +71,19 @@ nav li {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-top: 1.7em;
+    justify-content: space-between;
 }
-/* next work on sizing the text and choosing a font */
+
+/* article container styles */
+.article-container {
+    width: 20vw;
+}
+
+.article-title {
+    margin-top: 1em;
+}
+
+.article-description {
+    margin-top: .5em;
+}
