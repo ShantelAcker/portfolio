@@ -9,6 +9,11 @@
     
 }
 
+.section-title {
+    margin-top: 2em;
+    font-size: 2em;
+}
+
 /* body {
     background: linear-gradient(0deg,rgb(183, 232, 245) 0%, rgba(252,219,219,1) 75%);
     background-repeat: no-repeat;
@@ -56,10 +61,6 @@ main {
     margin: auto;
 }
 
-.page-title {
-    margin-top: 2em;
-}
-
 /* project container styles */
 .project-container {
     display: flex;
@@ -93,6 +94,6 @@ main {
 }
 
 /* about section styles */
-.about-section {
+/* .about-section {
     margin-top: 4em;
-}
+} */
