@@ -82,7 +82,7 @@ main {
 }
 
 .project-image {
-    width: 320px;
+    width: 25vw;
     box-shadow: 10px 9px 25px 1px rgba(190,190,190,0.52);
 }
 
@@ -186,7 +186,13 @@ main {
     }
     
     .article-container {
-        width: 60vw;
+        width: 50vw;
         margin-bottom: 2em;
+    }
+}
+
+@media only screen and (min-width: 1201px) {
+    .article-description {
+        width: 25vw;
     }
 }
