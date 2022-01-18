@@ -83,12 +83,13 @@ main {
 
 .project-image {
     width: 25vw;
+    border-radius: 12px;
     box-shadow: 10px 9px 25px 1px rgba(190,190,190,0.52);
 }
 
 .article-title {
     margin-bottom: 1em;
-    font-size: 1.3em;
+    font-size: 1.4em;
     font-weight: normal;
 }
 
