@@ -8,7 +8,7 @@
     padding: 0;
     /* font-family: 'Patrick Hand', cursive; */
     font-family: 'Roboto Mono', sans-serif;
-
+    color: #07073d;
 }
 
 .section-title {
@@ -94,6 +94,7 @@ main {
 
 .project-image {
     width: 320px;
+    box-shadow: 10px 9px 25px 1px rgba(190,190,190,0.52);
 }
 
 .article-title {
