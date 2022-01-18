@@ -8,7 +8,7 @@
     padding: 0;
     /* font-family: 'Patrick Hand', cursive; */
     font-family: 'Roboto Mono', sans-serif;
-    color: #07073d;
+    box-sizing: border-box;
 }
 
 .section-title {
@@ -23,12 +23,6 @@
 .paragraph-margin {
     margin-top: 1em;
 }
-
-/* body {
-    background: linear-gradient(0deg,rgb(183, 232, 245) 0%, rgba(252,219,219,1) 75%);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-} */
 
 /* header styles */
 .header-elements {
@@ -47,12 +41,9 @@ header h1 {
 
 header a {
     text-decoration: none;
-    color: black;
-}
+    color: #07073d;
 
-/* header a:hover {
-    color: rgb(238, 110, 110);
-} */
+}
 
 .nav-elements {
     text-align: right;
@@ -66,14 +57,14 @@ nav ul {
 nav li {
     display: inline-block;
     padding-left: 1em;
-    font-size: 1.5em;
-    font-weight: bold;
+    font-size: 1.2em;
 }
 
 /* main styles */
 main {
     max-width: 75%;
     margin: auto;
+    color: #07073d;
 }
 
 /* project container styles */
@@ -83,10 +74,8 @@ main {
     flex-wrap: wrap;
     margin-top: 1.7em;
     justify-content: space-between;
-}
 
-/* article container styles */
-/* maybe make each article container a little card with a fancy box shadow background */
+}
 
 .article-container {
     width: 20vw;
@@ -106,4 +95,98 @@ main {
 .project-link {
     text-decoration: none;
     color: rgb(238, 110, 110);
+}
+
+/* responsive styles */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    main {
+        max-width: 90%;
+    }
+
+    .header-elements {
+        flex-direction: column;
+    }
+
+    .nav-elements {
+        margin-top: .5em;
+    }
+    
+    nav li {
+        display: block;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .project-container {
+        flex-direction: column;
+    }
+
+    .project-image {
+        width: 85vw;
+    }
+
+    .article-container {
+        width: 90vw;
+        margin-bottom: 2em;
+    }
+    
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+
+    .header-elements {
+        flex-direction: column;
+    }
+    
+    nav li {
+        display: block;
+        padding: auto;
+        text-align: center;
+    }
+
+    .project-container {
+        flex-direction: column;
+    }
+
+    .project-image {
+        width: 70vw;
+    }
+
+    .article-container {
+        width: 75vw;
+        margin-bottom: 2em;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+    main {
+        max-width: 50%;
+    }
+
+    .header-elements {
+        flex-direction: column;
+    }
+
+    .nav-elements {
+        flex-grow: 0;
+        padding-top: .5em;
+    }
+
+    nav li {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .project-container {
+        flex-direction: column;
+    }
+
+    .project-image {
+        width: 50vw;
+    }
+    
+    .article-container {
+        width: 60vw;
+        margin-bottom: 2em;
+    }
 }
