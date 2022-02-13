@@ -1,12 +1,10 @@
 /* imports */
-@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
 /* universal styles */
 * {
     margin: 0;
     padding: 0;
-    /* font-family: 'Patrick Hand', cursive; */
     font-family: 'Roboto Mono', sans-serif;
     box-sizing: border-box;
 }
@@ -64,7 +62,7 @@ nav li {
 main {
     max-width: 75%;
     margin: auto;
-    color: #07073d;
+    color: rgb(7, 7, 59);
 }
 
 /* project container styles */
@@ -96,6 +94,48 @@ main {
 .project-link {
     text-decoration: none;
     color: rgb(238, 110, 110);
+}
+
+/* contact form section styles */
+.contact-section {
+    margin-bottom: 2em;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    margin: auto;
+}
+
+.form-item {
+    color:#07073d;
+    margin-top: 1em;
+    font-size: 1.1em;
+    border: 2px solid rgb(7, 7, 59);
+    border-radius: 5px;
+    padding: .5em;
+}
+
+.form-item:focus {
+    border-color: rgb(238, 110, 110);
+    outline: none;
+}
+
+.form-textarea {
+    resize: vertical;
+}
+
+.form-button {
+    cursor: pointer;
+    background-color: #07073d;
+    color: white;
+    font-size: 1.4em;
+}
+
+.form-button:hover, .form-button:focus {
+    background-color: rgb(238, 110, 110);
+    border-color: rgb(238, 110, 110);
 }
 
 /* responsive styles */
